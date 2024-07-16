@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resume</title>
 </head>
 <body>
-    <h2>{‌{user_profile.name}}</h2>
-    <h2>{‌{user_profile.email}}</h2>
-    <h2>{‌{user_profile.phone}}</h2>
+    <h2>{‌{user_profiles.name}}</h2>
+    <h2>{‌{user_profiles.email}}</h2>
+    <h2>{‌{user_profiles.phone}}</h2>
     <hr/>
     <br/>
     <p>Summary</p>
-    <p>{‌{user_profile.summary}}</p>
-    <hr/>
-    <p>Skills</p>
-    <p>{‌{user_profile.skills}}</p>
+    <p>{‌{user_profiles.summary}}</p>
     <hr/>
     <p>Education</p>
     <ul>
-        <li>Schooling: {‌{user_profile.degree1}}</li>
-        <li>{‌{user_profile.degree2}} from {‌{user_profile.degree2}}</li>
+        <li>{‌{user_profiles.degree1}}</li>
+        <li>{‌{user_profiles.degree2}}</li>
     </ul>
     <hr/>
-    <p>Project</p>
-    <p>{{user_profile.projects}}</p>
+    <p>Skills : </p>
+    <p>{‌{user_profiles.skills}}</p>
+    <hr/>
+    <p>Project : </p>
+    <p>{{user_profiles.projects}}</p>
     <hr>
-    <p>Experience</p>
-    <p>{‌{user_profile.experience}}</p>
-
-    
+    <p>Experience : </p>
+    <p>{‌{user_profiles.experience}}</p>
+    <p>Language : </p>
+    <p>‌{{user_profiles.language}}</p>
 </body>
 </html>
